@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/app_scanner/__init__.py
+src/app_scanner/_linux.py
+src/app_scanner/_macos.py
+src/app_scanner/_windows.py
+src/app_scanner.egg-info/PKG-INFO
+src/app_scanner.egg-info/SOURCES.txt
+src/app_scanner.egg-info/dependency_links.txt
+src/app_scanner.egg-info/top_level.txt
+test/test_app_scanner.py

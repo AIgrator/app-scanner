@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app-scanner"
+version = "0.1.0"
+authors = [
+  { name="AIgrator", email="aigrator@gmail.com" },
+]
+description = "A cross-platform Python utility to find installed applications on Windows, macOS, and Linux."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Desktop Environment",
+]
+keywords = ["app", "scanner", "cross-platform", "applications", "installed", "windows", "macos", "linux"]
+
+[project.urls]
+"Homepage" = "https://github.com/your-username/app-scanner"
+"Bug Tracker" = "https://github.com/your-username/app-scanner/issues"

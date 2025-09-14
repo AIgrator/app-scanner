@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: app-scanner
+Version: 0.0.1
+Summary: A cross-platform Python utility to find installed applications on Windows, macOS, and Linux.
+Author-email: AIgrator <aigrator@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/your-username/app-scanner
+Project-URL: Bug Tracker, https://github.com/your-username/app-scanner/issues
+Keywords: app,scanner,cross-platform,applications,installed,windows,macos,linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Desktop Environment
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# App Scanner
+
+A cross-platform Python utility to find installed applications on Windows, macOS, and Linux.
+
+This library provides a simple function, `get_installed_apps()`, that returns a list of installed applications on the host operating system.
+
+## Features
+
+- **Cross-Platform:** Works on Windows, macOS, and Linux.
+- **Simple API:** A single function to get the list of apps.
+- **Lightweight:** No external dependencies.
+
+## Installation
+
+```bash
+pip install app-scanner
+```
+
+## Usage
+
+```python
+from app_scanner import get_installed_apps
+
+apps = get_installed_apps()
+
+for app in apps:
+    print(f"Name: {app['name']}, Path: {app.get('path', 'N/A')}")
+```
+
+## How it Works
+
+- **Windows:** Uses the existing `WindowsAppScanner` logic (via PowerShell) to find apps from the Start Menu.
+- **macOS:** Uses `mdfind` to locate all `.app` bundles.
+- **Linux:** Scans for `.desktop` files in standard application directories (`/usr/share/applications` and `~/.local/share/applications`).
