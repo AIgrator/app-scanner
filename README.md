@@ -13,7 +13,7 @@ This library provides a simple function, `get_installed_apps()`, that returns a 
 ## Installation
 
 ```bash
-pip install app-scanner
+pip install installed-apps-scanner
 ```
 
 ## Usage
